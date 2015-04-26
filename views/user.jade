@@ -1,0 +1,22 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset-"utf-8")
+    title cookie excersize | user
+
+  body
+    h1 You are successfully logged in!
+    p User ID: #{userId}
+    p Password: #{password}
+
+    a(href="/logout") ログアウト
+
+    hr
+    p cookie:
+      div(id="cookie")
+
+    script.
+      onload = function() {
+        var cookie = document.cookie;
+        document.getElementById('cookie').innerHTML = cookie;
+      };

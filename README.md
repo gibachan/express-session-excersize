@@ -11,3 +11,15 @@
 4. クライアントからサーバの別のページへアクセスする時に、セッションIDをサーバへ送る。
  - HTTPリクエストのヘッダにcookieが付与されてサーバー送られる。
 5. サーバーは、クライアントから送られてきたセッションIDを確認して、2.のクライアントであることを確認する。
+
+### 実行方法
+```
+git clone https://github.com/gibachan/express-session-excersize.git
+
+cd express-session-excersize
+
+npm install
+
+npm start
+```
+ブラウザ```http://localhost:3000``にアクセスし、適当なUser IDとパスワードを入力してログインする。
